@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import HomePage from "../components/home";
+import { HomePage } from "../components/home";
 import { PersonalDetails} from "../shared/utils/types";
 import {PersonalDetailsContext} from "../shared/utils/contexts";
 import getPersonalDetails from "../shared/utils/apiServices";
