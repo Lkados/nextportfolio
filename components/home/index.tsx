@@ -15,4 +15,4 @@ const HomePage = (): JSX.Element => {
   );
 };
 
-export HomePage;
+export default HomePage;
