@@ -2,7 +2,7 @@ import Lading from "./landing";
 import Skills from "./skills";
 
 
-export default function HomePage (): JSX.Element => {
+export default function HomePage (): JSX.Element {
   return (
     <>
       <div className="bg-blue pt-28">
