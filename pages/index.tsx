@@ -25,7 +25,7 @@ const Home = ({personalDetails}: Props): JSX.Element => {
 
 
 export default Home;
-export {}
+
 export async function getStaticProps(): Promise<{
   props: { personalDetails: PersonalDetails};
 }> {

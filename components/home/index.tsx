@@ -2,7 +2,7 @@ import Lading from "./landing";
 import Skills from "./skills";
 
 
-const HomePage = (): JSX.Element => {
+export default const HomePage = (): JSX.Element => {
   return (
     <>
       <div className="bg-blue pt-28">
@@ -14,5 +14,4 @@ const HomePage = (): JSX.Element => {
     </>
   );
 };
-export {}
-export default HomePage;
+
