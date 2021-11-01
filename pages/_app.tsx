@@ -40,7 +40,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
           <meta property="twitter:card" content="summary_large_image" />
           <meta property="twitter:url" content="https://modevoc.fr/" />
-          <meta property="twitter:site" content="@harshgoel05" />
+          <meta property="twitter:site" content="@Modevoc" />
           <meta property="twitter:title" content="Mohamed Kachtit | Développeur web" />
           <meta
             property="twitter:description"
