@@ -116,6 +116,7 @@ a {
     opacity: 0;
   }
 }
+
 .expand {
   animation: cursorAnim 0.5s forwards;
 }

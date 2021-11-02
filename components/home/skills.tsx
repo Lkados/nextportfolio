@@ -12,7 +12,7 @@ export default function Skills(): JSX.Element {
         <img
           src="/images/vectors/cylinder.svg"
           alt="Cylinder Vector"
-          className="absolute left-0 transform rotate-180 top-16 sm:top-7 md:top-28 lg:top-7 w-2/3 md:w-50p lg:w-35p pointer-events-none opacity-50 transition-all animate-changewidth"
+          className="absolute left-0 transform rotate-180 top-16 sm:top-7 md:top-28 lg:top-7 w-2/3 md:w-50p lg:w-35p pointer-events-none opacity-50 transition-all animate-translateright"
         />
         <img
           src="/images/vectors/l-vector.svg"

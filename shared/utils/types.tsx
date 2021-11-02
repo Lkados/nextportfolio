@@ -9,6 +9,12 @@ export interface PersonalDetails {
   whatido:string;
 }
 
+export interface WorkDetails {
+  resume: string;
+  title: string;
+  company: string;
+  logo: string;
+}
 export interface SocialMedia {
   link: string;
   image_file: string;

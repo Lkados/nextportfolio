@@ -1,5 +1,6 @@
 import Lading from "./landing";
 import Skills from "./skills";
+import Work from "./work";
 
 
 export default function HomePage (): JSX.Element {
@@ -9,6 +10,7 @@ export default function HomePage (): JSX.Element {
         <div className="overflow-x-hidden">
           <Lading />
           <Skills />
+          <Work />
         </div>
       </div>
     </>
