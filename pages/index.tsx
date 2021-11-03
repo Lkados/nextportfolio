@@ -13,16 +13,16 @@ import Work from "../components/home/work";
 type Props = {
   personalDetails: PersonalDetails;
   workDetails: WorkDetails;
-  skillsCards: SkillsCards;
+  skillsCardsDetails: SkillsCards[];
   projectDetails: Project[];
 };
 
-const Home = ({ personalDetails, workDetails, skillsCards, projectDetails }: Props): JSX.Element => {
+const Home = ({ personalDetails, workDetails, skillsCardsDetails, projectDetails }: Props): JSX.Element => {
   return (
     <>
       <PersonalDetailsContext.Provider value={personalDetails}>
         <WorkDetailsContext.Provider value={workDetails}>
-          <SkillsCardsContext.Provider value={skillsCards}>
+          <SkillsCardsContext.Provider value={skillsCardsDetails}>
             <ProjectDetailsContext.Provider value={projectDetails}>
               <SocialBar />
               <HomePage />
@@ -38,11 +38,11 @@ const Home = ({ personalDetails, workDetails, skillsCards, projectDetails }: Pro
 export default Home;
 
 export async function getServerSideProps(): Promise<{
-  props: { personalDetails: PersonalDetails, workDetails:WorkDetails, skillsCards:SkillsCards, projectDetails: Project };
+  props: { personalDetails: PersonalDetails, workDetails: WorkDetails, skillsCardsDetails: SkillsCards[], projectDetails: Project[] };
 }> {
   const personalDetails = (await getPersonalDetails()) as PersonalDetails;
   const workDetails = (await getWorkDetails()) as WorkDetails;
-  const skillsCards = (await getSkillsCards()) as SkillsCards[];
+  const skillsCardsDetails = (await getSkillsCards()) as SkillsCards[];
   const projectDetails = (await getProjectsDetails()) as Project[];
-  return { props: { personalDetails, workDetails, skillsCards, projectDetails } };
+  return { props: { personalDetails, workDetails, skillsCardsDetails, projectDetails } };
 }

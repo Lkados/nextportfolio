@@ -5,18 +5,18 @@ import { SkillsCardsContext } from "../utils/contexts";
 
 
 export default function SkillsCard(): JSX.Element {
-  const skillsCards: SkillsCards[] = useContext(SkillsCardsContext);
+  const skillsCardsDetails: SkillsCards[] = useContext(SkillsCardsContext);
   return (
       <div className="relative col-span-12 md:col-span-5 lg:col-span-6 flex flex-col">
-        {skillsCards.map(({ id, title, description, color, classe }) => {
+        {skillsCardsDetails.map((card) => {
           return (
             <div
-              className={classe}>
+              className={card.classe}>
               <TextCards
-                key={id}
-                heading={title}
-                text={description}
-                color={color}
+                key={card.id}
+                heading={card.title}
+                text={card.description}
+                color={card.color}
               />
             </div>
           );
