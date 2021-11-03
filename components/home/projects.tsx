@@ -31,10 +31,10 @@ export default function Projects(): JSX.Element {
                 />
                 <HeaderSmall text="Voyons Voir" />
                 <h1 className="sm:w-4/5 mb-3 mt-1 text-7xl sm:text-5xl md:text-7xl lg:text-4xl font-normal tracking-wide text-white leading-normal lg:leading-7">
-                  Voici quelques <span className="text-pink font-bold">projets</span> sur les quel j'ai eu l'honneur de travailler
+                  Voici quelques <span className="text-pink font-bold">projets</span> sur les quel j&apos;ai eu l&apos;honneur de travailler
                 </h1>
                 <h1 className="mb-3 mt-6 text-4xl sm:text-2xl md:text-3xl lg:text-2xl xl:text-1xl font-extrabold text-white leading-none ">
-                  C'est par  <span className="text-pink font-bold">ici.</span>
+                  C&apos;est par  <span className="text-pink font-bold">ici.</span>
                 </h1>
                 <div className="sm:ml-52 xl:ml-96 transform rotate-90">
                   <Link href="#projects">
@@ -56,7 +56,6 @@ export default function Projects(): JSX.Element {
               <ProjectCard
                 project={project}
                 key={project.title}
-                filter={{ key: 'featured', value: true }}
               />
             ))}
           </div>

@@ -26,20 +26,19 @@ export async function getWorkDetails(): Promise<WorkDetails | boolean> {
     return false;
   }
 }
-export async function getSkillsCards(): Promise<SkillsCards[] | boolean> {
+export async function getSkillsCards(): Promise<SkillsCards[] | boolean | null> {
   try {
     let { data: skills, error } = await supabase
       .from('skills')
       .select('*')
       .order('id')
-    console.log(skills)
     return skills ;
   } catch (err){
     return false;
   }
 }
 
-export async function getProjectsDetails(): Promise<Project[] | boolean> {
+export async function getProjectsDetails(): Promise<Project[] | boolean | null> {
   try {
     let { data: project, error } = await supabase
       .from('project')
