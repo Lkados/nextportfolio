@@ -1,5 +1,5 @@
 import { supabase } from "../../pages/api/supabase";
-import { PersonalDetails, WorkDetails } from "./types";
+import { PersonalDetails, Project, SkillsCards, WorkDetails } from "./types";
 
 export async function getPersonalDetails(): Promise<PersonalDetails | boolean> {
   try {
@@ -7,6 +7,7 @@ export async function getPersonalDetails(): Promise<PersonalDetails | boolean> {
       .from('users')
       .select('*')
       .single()
+    console.log(users)
     return users ;
   } catch (err){
     return false;
@@ -19,7 +20,31 @@ export async function getWorkDetails(): Promise<WorkDetails | boolean> {
       .from('work')
       .select('*')
       .single()
+    console.log(work)
     return work ;
+  } catch (err){
+    return false;
+  }
+}
+export async function getSkillsCards(): Promise<SkillsCards[] | boolean> {
+  try {
+    let { data: skills, error } = await supabase
+      .from('skills')
+      .select('*')
+      .order('id')
+    console.log(skills)
+    return skills ;
+  } catch (err){
+    return false;
+  }
+}
+
+export async function getProjectsDetails(): Promise<Project[] | boolean> {
+  try {
+    let { data: project, error } = await supabase
+      .from('project')
+      .select('*')
+    return project;
   } catch (err){
     return false;
   }

@@ -15,6 +15,25 @@ export interface WorkDetails {
   company: string;
   logo: string;
 }
+export interface Project {
+  title: string;
+  tagline: string;
+  description: string;
+  img: string;
+  tags: string[];
+  github: string;
+  category: string[];
+  featured: boolean;
+  launch_video?: string;
+  url?: string;
+}
+export interface SkillsCards {
+  id: number;
+  classe:string;
+  title: string;
+  description: string;
+  color: string;
+}
 export interface SocialMedia {
   link: string;
   image_file: string;
