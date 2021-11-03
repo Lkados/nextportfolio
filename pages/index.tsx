@@ -43,6 +43,6 @@ export async function getServerSideProps(): Promise<{
   const personalDetails = (await getPersonalDetails()) as PersonalDetails;
   const workDetails = (await getWorkDetails()) as WorkDetails;
   const skillsCards = (await getSkillsCards()) as SkillsCards[];
-  const projectDetails = (await getProjectsDetails()) as PersonalDetails[];
+  const projectDetails = (await getProjectsDetails()) as Project[];
   return { props: { personalDetails, workDetails, skillsCards, projectDetails } };
 }
