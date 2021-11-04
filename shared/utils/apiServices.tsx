@@ -7,7 +7,6 @@ export async function getPersonalDetails(): Promise<PersonalDetails | boolean> {
       .from('users')
       .select('*')
       .single()
-    console.log(users)
     return users ;
   } catch (err){
     return false;
@@ -20,7 +19,6 @@ export async function getWorkDetails(): Promise<WorkDetails | boolean> {
       .from('work')
       .select('*')
       .single()
-    console.log(work)
     return work ;
   } catch (err){
     return false;
@@ -43,6 +41,8 @@ export async function getProjectsDetails(): Promise<Project[] | boolean | null> 
     let { data: project, error } = await supabase
       .from('project')
       .select('*')
+      .order('id')
+    console.log(project)
     return project;
   } catch (err){
     return false;

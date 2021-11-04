@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useContext } from 'react';
-import TextCards from 'shared/components/text-cards';
 import Button from 'shared/components/buttons';
 import HeaderSmall from 'shared/components/header-small';
 import ProjectCard from 'shared/components/project-card';
@@ -12,6 +11,9 @@ import SkillsCard from "../../shared/components/skills-cards";
 export default function Projects(): JSX.Element {
   const router = useRouter();
   const projectDetails: Project[] = useContext(ProjectDetailsContext);
+  const featuredProjects = projectDetails.filter(project => project.featured);
+  
+
   return (
     <>
       <div>
@@ -52,7 +54,7 @@ export default function Projects(): JSX.Element {
         </div>
         <div className="relative h-auto sm:h-auto md:h-auto ml-4 sm:mx-12 md:mx-16" id="projects">
           <div className="grid md:grid-cols-2 gap-4 place-items-center">
-            {projectDetails.map((project: Project) => (
+            {featuredProjects.map((project: Project) => (
               <ProjectCard
                 project={project}
                 key={project.title}
