@@ -1,6 +1,6 @@
 import { Project } from '../../shared/utils/types';
-import Details from './details';
 import Landing from './landing';
+import Details from "./details";
 
 type Props = {
   project: Project;

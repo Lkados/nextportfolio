@@ -39,7 +39,7 @@ export default function Landing({ project }: Props): JSX.Element {
                 <div className="sm:col-span-1 xl:col-span-1">
                   <Button
                     type="outlined"
-                    text="View on Github"
+                    text="Github"
                     onClickHandler={() => window.open(project.github, '_blank')}
                   />
                 </div>

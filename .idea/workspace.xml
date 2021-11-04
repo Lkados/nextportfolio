@@ -2,35 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e5a182a-42ef-49b4-baad-6fb59c98fb31" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/@types/react-tilt/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/notfound/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/project-details/details.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/project-details/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/project-details/landing.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/projects/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/404.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/project/[title].tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/projects.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shared/components/loader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/home/projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/projects.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/companies/bharatpe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/companies/coding_blocks.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/companies/dezigndia.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/companies/hashbinary.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/companies/heiphen.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/companies/iec.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/companies/inception_wave.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/companies/insolvers.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/companies/social_dukan.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/companies/workmailcommunity.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/companies/zoob_labs.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/cute-astronaut-working-on-laptop-cartoon-vector-icon-illustration-science-technology-icon-concept-isolated-premium-vector-flat-cartoon-style/3600_8_05.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/cute-astronaut-working-on-laptop-cartoon-vector-icon-illustration-science-technology-icon-concept-isolated-premium-vector-flat-cartoon-style/3600_8_05.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/components/project-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/shared/components/project-card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/utils/apiServices.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/shared/utils/apiServices.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/utils/constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shared/utils/constants.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/project-details/details.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/project-details/details.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/project-details/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/project-details/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/project-details/landing.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/project-details/landing.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +31,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/components/project-details" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
@@ -64,6 +39,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components/project-details" />
       <recent name="$PROJECT_DIR$/components" />
       <recent name="$PROJECT_DIR$/pages" />
       <recent name="$PROJECT_DIR$/shared/components" />
